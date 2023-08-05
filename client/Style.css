@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Montserrat:ital,wght@0,400;1,600&family=Poppins:wght@300;500&family=Raleway:ital,wght@1,900&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Montserrat,wght@0,400;1,600&family=Poppins:wght@300;500&family=Raleway:ital,wght@1,900&family=Roboto:wght@300&display=swap');
+/* Reset and general styles */
+/* ... */
+
+/* App container styles */
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+  
+  .input-container {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #keywordInput {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  #generateButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Shayari card styles */
+  .shayari-card {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    position: relative;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .shayari-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .shayari-card p {
+    margin: 0;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff5a5a;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .delete-button:hover {
+    background-color: #d9534f;
+  }
+  
+  /* Footer styles */
+  .footer {
+    text-align: center;
+  }
+  
+  .clear-button {
+    padding: 10px 20px;
+    background-color: #ff5a5a;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .clear-button:hover {
+    background-color: #d9534f;
+  }
+  
+  /* Dark Mode styles */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .container.dark-mode {
+    background-color: #333;
+  }
+  
+  #keywordInput.dark-mode,
+  #generateButton.dark-mode {
+    background-color: #444;
+  }
+  
+  .shayari-card.dark-mode {
+    background-color: #444;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .delete-button.dark-mode {
+    background-color: #ff5a5a;
+  }
+  
+  .clear-button.dark-mode {
+    background-color: #ff5a5a;
+  }
+  
+  .child_container_shayari_button{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.child_container_shayari_button>select{
+    padding: 5px 5px;
+    background: green;
+    font-size: medium;
+    color: white;
+    border-radius: 4px; 
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .child_container_shayari_button>button{
+    padding: 5px 15px;
+    background: rgba(209, 28, 28, 0.918);
+    font-size: medium;
+    color: white;
+    border-radius: 4px; 
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  .child_container_shayari_button>button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  .child_container_shayari_button>select:focus{
+    outline: none;
+    transform: scale(1.1);
+  }
+
+  .child_container_shayari_button>select>option{
+    background-color: #fff;
+    color: black;
+    border-radius: 6px;
+    border: 1px solid;
+  }
